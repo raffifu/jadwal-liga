@@ -1,0 +1,117 @@
+body {
+    font-family: monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
+}
+
+#upcoming-match {
+    overflow-x: auto;
+    display: flex;
+    scrollbar-width: none;
+    margin-top: 20px;
+}
+
+#finished-match {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#layout-detail-team {
+    display: flex;
+}
+
+#favorite-team {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-bar {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.bar-color {
+    background-color: #F2C94C;
+}
+
+#loading {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+#loading img {
+    width: 30%;
+}
+
+@media screen and (max-width: 800px) {
+    .favorite-team {
+        flex-direction: column;
+    }
+
+    #layout-detail-team {
+        display: block;
+    }
+
+    #loading img{
+        width: 50%
+    }
+}
+
+
+/* this code from https://codepen.io/stellina91/pen/grIHf for heart symbol*/
+.heart{
+    position: relative;
+    width: 100%;
+    height: 90%;
+    float: left;
+}
+.heart:before,
+.heart:after{
+    position: absolute;
+    content: "";
+    left: 7.5px;
+    top: 4px;
+    width: 7.5px;
+    height: 12px;
+    background: #fff;
+    -moz-border-radius: 50px 50px 0 0;
+    border-radius: 50px 50px 0 0;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+       -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+         -o-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+}
+.heart:after{
+    left: 0;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+       -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+         -o-transform-origin: 100% 100%;
+            transform-origin :100% 100%;
+}

@@ -1,0 +1,32 @@
+{
+  "name": "bola_net",
+  "version": "1.0.0",
+  "description": "informasi sepak bola",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev-run": "webpack-dev-server --config webpack.dev.js ",
+    "build": "webpack --config webpack.prod.js"
+  },
+  "author": "raffifu",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "copy-webpack-plugin": "^6.0.3",
+    "css-loader": "^4.1.0",
+    "html-loader": "^1.1.0",
+    "html-webpack-plugin": "^4.3.0",
+    "idb": "^5.0.4",
+    "materialize-css": "^1.0.0",
+    "regenerator-runtime": "^0.13.7",
+    "style-loader": "^1.2.1",
+    "url-loader": "^4.1.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.0.9"
+  },
+  "devDependencies": {}
+}
